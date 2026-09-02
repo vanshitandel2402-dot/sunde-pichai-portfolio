@@ -1,0 +1,290 @@
+```css
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4285f4, #673ab7);
+    color: white;
+    min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav h2 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 8%;
+}
+
+.hero img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero-text h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: white;
+    color: #4285f4;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 60px 8%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* About */
+#about p {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #4285f4;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #bbb;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: #4285f4;
+    color: white;
+}
+
+/* Contribution Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 30%;
+    min-width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #4285f4;
+    margin-bottom: 10px;
+}
+
+/* Awards */
+.award-list {
+    background: white;
+    padding: 30px 50px;
+    border-radius: 12px;
+}
+
+.award-list li {
+    margin: 12px 0;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.gallery img {
+    width: 30%;
+    min-width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #4285f4;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: #3367d6;
+}
+
+.official {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.official a {
+    color: #4285f4;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
+```
